@@ -4,7 +4,7 @@
 #include <cstdlib>  
 
 int main(int argc, char* argv[]) {
-
+    //Edit
     std::list<int> intList;
 
     for (int i = 1; i < argc; ++i) {
@@ -12,10 +12,10 @@ int main(int argc, char* argv[]) {
         intList.push_back(temp);
     }
 
-    std::list<int>::iterator it = intList.begin();
-    while (it != intList.end()) {
-        std::cout << *it << std::endl;
-        it++;
+    std::list<int>::reverse_iterator rit = intList.rbegin();
+    while (rit != intList.rend()) {
+        std::cout << *rit << std::endl;
+        rit++;
     }
 
     return 0;
